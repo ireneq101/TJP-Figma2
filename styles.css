@@ -6,8 +6,8 @@
 
 body {
     width: 100%;
-    max-width: 100%;
-    align-content: center;
+    max-width: 1440%;
+    margin: 0 auto;
 }
 
 header {
