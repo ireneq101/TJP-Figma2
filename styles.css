@@ -512,10 +512,6 @@ footer {
     .house img {
         width: 100%;
     }
-
-    /* .semi-left {
-        font-size: 3rem;
-    } */
 }
 
 @media screen and (max-width: 345px) {
@@ -530,3 +526,32 @@ footer {
         font-size: 3rem;
     }
 }
+
+
+/* Styles for standard smartphones (up to 800px wide) */
+/* @media screen and (max-width: 800) { */
+    /* body {
+        max-width: 100%;
+        align-content: center
+    }
+
+    nav {
+        display: none;
+    }
+
+    .head > img {
+        display: block;
+    }
+
+    .first-section {
+        flex-direction: column;
+    }
+
+    .house {
+        width: 70%;
+    }
+
+    .house img {
+        width: 100%;
+    } */
+/* } */
