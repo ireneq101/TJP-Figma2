@@ -8,6 +8,7 @@ body {
     width: 100%;
     max-width: 1440%;
     margin: 0 auto;
+    background-color: white;
 }
 
 header {
@@ -15,7 +16,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 2;
-    /* margin: 6% 6%; */
 }
 
 
@@ -24,7 +24,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    /* margin: 4% 4%; */
 }
 
 
@@ -33,6 +32,10 @@ header {
     display: flex;
     width: 50%;
     margin: 1% 6%;
+}
+
+.left img {
+    width: 30%;
 }
 
 
@@ -55,6 +58,8 @@ nav a {
     text-decoration: none;
     color: black;
     padding: 2%;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 18px;
 }
 
 
@@ -474,9 +479,10 @@ footer {
 
 #foot {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 40%;
+    margin: 1% 6%;
+    /* gap: 30%; */
 }
 
 #last-frame img {
@@ -487,6 +493,7 @@ footer {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
+    margin-bottom: 3%;
 }
 
 
