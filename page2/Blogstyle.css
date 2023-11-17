@@ -57,7 +57,6 @@ nav {
 }
 
 
-
 nav a {
     text-decoration: none;
     color: black;
@@ -66,6 +65,20 @@ nav a {
     font-size: 18px;
 }
 
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon-close {
+    display: none;
+    cursor: pointer;
+}
+
+.nav2 {
+    display: none;
+}
 
 
 #blog {
@@ -409,6 +422,46 @@ footer {
     nav {
         display: none;
     }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.hide {
+        display: none;
+    }
+
+    .menu-icon-close.hide{
+        display: block;
+    }
+
+    .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Background, #F3F6F1);
+        gap: 72px;
+        padding-bottom: 17rem;
+    }
+
+    .nav2.visible a {
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 48px;
+        color: #141414;
+        text-align: center;
+        font-family: 'Clash Grotesk';
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    hr {
+        margin: 0 30%;
+    }
+
+    #blog {
+        text-decoration: none;
+    }
+
 
     header {
         padding: 17px;
