@@ -440,7 +440,7 @@ footer {
         flex-direction: column;
         background: var(--Background, #F3F6F1);
         gap: 72px;
-        padding-bottom: 17rem;
+        height: 100vh;
     }
 
     .nav2.visible a {
