@@ -22,7 +22,6 @@ header {
 }
 
 
-
 .head {
     display: flex;
     justify-content: space-between;
@@ -36,7 +35,6 @@ header {
 }
 
 
-
 .left {
     display: flex;
     width: 50%;
@@ -46,7 +44,6 @@ header {
 .left img {
     width: 30%;
 }
-
 
 
 nav {
