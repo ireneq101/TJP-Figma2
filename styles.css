@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: yellowgreen;
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -30,7 +30,7 @@ header {
 
 .left {
     display: flex;
-    width: 50%;
+    width: 40%;
     margin: 1% 6%;
 }
 
@@ -59,7 +59,7 @@ nav a {
     color: black;
     padding: 2%;
     font-family: 'Proxima Nova', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .menu-icon {
@@ -327,9 +327,9 @@ section{
     width: 100%;
     height: 120vh;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: center;
-    padding: 130px;
+    padding: 130px 130px 0 130px;
     margin: auto;
     /* gap: 30px; */
     background-color: white;
@@ -395,7 +395,6 @@ section{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
@@ -612,6 +611,15 @@ footer {
 } */
 
 @media screen and (max-width: 1259px) {
+    section{
+        height: 90vh;
+    }
+
+    .third-section {
+        height: 120vh;
+        /* padding: 130px 130px 0 130px; */
+    }
+
     .third {
         width: 40%
     }
@@ -814,6 +822,14 @@ footer {
         padding-left: 15%;
     }
 
+    section{
+        height: 90vh;
+    }
+
+    .third-section {
+        /* height: 100vh; */
+    }
+
     .girl-frame p {
         margin-left: 25%;
         font-size: 12px;
@@ -865,13 +881,17 @@ footer {
     }
 
     .icon {
-        gap:3%;
+        gap:5%;
     }
-    
+
+    .icon img {
+        width: 28%;
+    }
     
     .icon p {
         font-size: 10px;
         font-weight: 400;
+        margin-top: 20%;
     }
 
     .house {
@@ -898,12 +918,21 @@ footer {
         font-weight: 500;
         width: 25%;
     }
+
+    section{
+        height: 90vh;
+    }
+
+    .third-section {
+        /* height: 100vh; */
+    }
   
     .third-section {
         width: 100%;
         height: 140vh;
         display: flex;
-        /* padding: 130px; */
+        padding: 20px 0;
+        margin-top: 200px;
         flex-direction: column-reverse;
     }
     
@@ -929,9 +958,9 @@ footer {
     }
     
     .girl-frame {
-        width: 60%;
+        width: 55%;
         bottom: 7rem;
-        right: 7rem;
+        right: 5rem;
         padding: 10px;
     }
     
@@ -957,17 +986,18 @@ footer {
     #social {
         margin-left: 30%;
         margin-top: 10%;
+        justify-content: space-around;
     }
     
     #ending {
         width: 24%;
-        bottom: 15rem;
-        left: 22rem;
+        bottom: 16rem;
+        left: 26rem;
         padding: 16px;
     }
     
     #ending .picture {
-        width: 5rem;
+        width: 7rem;
         text-align: center;
     }
     
@@ -989,6 +1019,10 @@ footer {
 }
 
 @media screen and (max-width: 861px) {
+    .left img {
+        width: 45%;
+    }
+
     .semi-left h1 {
         font-size: 30px;
         font-weight: 600;
@@ -1009,14 +1043,14 @@ footer {
     }
 
     #ending {
-        width: 24%;
+        width: 25%;
         bottom: 15rem;
-        left: 19rem;
+        left: 26rem;
         padding: 16px;
     }
 
     #ending .picture {
-        width: 4rem;
+        width: 6rem;
         text-align: center;
     }
 }
@@ -1062,8 +1096,9 @@ footer {
         margin: 0 15%;
     }
 
+   
     header {
-        padding: 2px 38px 0 0;
+        padding: 17px;
     }
 
     .head {
@@ -1084,7 +1119,7 @@ footer {
     }
 
     .left img {
-        width: 31%;
+        width: 45%;
     }
 
     .semi-end {
@@ -1109,9 +1144,9 @@ footer {
     }    
 
     .girl-frame {
-        width: 65%;
+        width: 58%;
         bottom: 7rem;
-        right: 5rem;
+        right:4rem;
         padding: 12px;
     }
     
@@ -1123,8 +1158,9 @@ footer {
     
     .girl-frame p {
         margin-left: 30%;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 400;
+        margin-top: 4%;
     }    
     
     #logo {
@@ -1136,17 +1172,17 @@ footer {
     
     #social {
         margin-left: 30%;
-        margin-top: 14%;
+        margin-top: 10%;
     }
     
     #ending {
         width: 24%;
-        left: 20rem;
-        bottom: 15rem;
+        left: 25rem;
+        bottom: 16rem;
     }
     
     #ending .picture {
-        width: 4rem;
+        width: 6rem;
         text-align: center;
     }
 }
@@ -1291,27 +1327,39 @@ footer {
     } 
 
     .girl-frame {
-        width: 71%;
+        width: 58%;
         bottom: 7rem;
-        right: 5rem;
-        padding: 7px 0;
+        right: 3rem;
+        padding: 12px;
+    }
+
+    .girl-frame p {
+        margin-left: 30%;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 4%;
+    }    
+    
+    #logo {
+        font-weight: 700;
+        font-size: 24px;
+        margin-left: 30%;
+        margin-top: -30%;
     }
     
-    .girl-frame p {
-        /* margin-top: 20%; */
+    #social {
         margin-left: 30%;
-        font-size: 12px;
-        font-weight: 400;
-    }  
-     
+        margin-top: 10%;
+    }
+    
     #ending {
-        width: 26%;
-        left: 17rem;
-        bottom: 14rem;
+        width: 24%;
+        left: 21rem;
+        bottom: 16rem;
     }
     
     #ending .picture {
-        width: 4rem;
+        width: 5rem;
         text-align: center;
     }
 }
@@ -1330,6 +1378,10 @@ footer {
     button {
         font-size: 13px;
         font-weight: 400;
+    }
+
+    section{
+        height: 160vh;
     }
 
     /* .third {
@@ -1359,9 +1411,64 @@ footer {
         bottom: 17rem;
         width: 25%;
     }
+
+    .girl-frame {
+        width: 58%;
+        bottom: 7rem;
+        right: 3rem;
+        padding: 12px;
+    }
+
+    .girl-frame p {
+        margin-left: 30%;
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 4%;
+    }    
+    
+    #logo {
+        font-weight: 700;
+        font-size: 24px;
+        margin-left: 30%;
+        margin-top: -30%;
+    }
+    
+    #social {
+        margin-left: 30%;
+        margin-top: 6%;
+    }
+    
+    #ending {
+        width: 24%;
+        left: 16rem;
+        bottom: 14rem;
+    }
+    
+    #ending .picture {
+        width: 3.5rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 564px) {
+    .left img {
+        width: 55%;
+    }
+
+    .icon {
+        gap:5%;
+    }
+
+    .icon img {
+        width: 28%;
+    }
+    
+    .icon p {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 20%;
+    }
+
     .semi-left h1 {
         font-size: 35px;
         font-weight: 600;
@@ -1377,20 +1484,12 @@ footer {
         font-weight: 400;
     }
 
-    /* .third {
-        width: 125%;
-        padding: 7% 0;
-    } */
-
-    #ending {
-        width: 26%;
-        left: 13rem;
-        bottom: 14rem;
+    section{
+        height: 150vh;
     }
-    
-    #ending .picture {
-        width: 3rem;
-        text-align: center;
+
+    .third-section {
+        height: 120vh;
     }
 }
 
@@ -1443,7 +1542,64 @@ footer {
     } 
 }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 447px) {
+    section{
+        height: 70vh;
+    }
+
+    .third-section {
+        height: 105vh;
+    }
+
+    .girl-frame {
+        width: 52%;
+        bottom: 4rem;
+        right: 1rem;
+        padding: 5px 0;
+    }
+
+    .girl-frame p {
+        margin-left: 30%;
+        font-size: 7px;
+        font-weight: 400;
+        margin-top: 4%;
+    }    
+    
+    #logo {
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: 30%;
+        margin-top: -25%;
+    }
+    
+    #social {
+        margin-left: 30%;
+        margin-top: 4%;
+        justify-content: space-evenly;
+    }
+    
+    #ending {
+        width: 24%;
+        left: 12rem;
+        bottom: 10rem;
+    }
+    
+    #ending .picture {
+        width: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .icon img {
+        width: 28%;
+    }
+    
+    .icon p {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
     #link {
         left: 15rem;
         bottom: 15rem;
@@ -1452,9 +1608,37 @@ footer {
     section{
         height: 150vh;
     }
+
+    /* .third-section {
+        height: 110vh;
+    } */
+
+    #ending {
+        width: 24%;
+        left: 14rem;
+        bottom: 11rem;
+    }
+
+    #ending .picture {
+        width: 3rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 355px) {
+    .icon {
+        gap:3%;
+    }
+
+    .icon img {
+        width: 23%;
+    }
+    
+    .icon p {
+        font-size: 10px;
+        font-weight: 200;
+    }
+
     #link {
         left: 11rem;
         bottom: 14rem;
@@ -1469,11 +1653,27 @@ footer {
     }
 
     section{
-        height: 137vh;
+        height: 50vh;
+    }
+
+    .third-section {
+        height: 105vh;
     }
 }
 
 @media screen and (max-width: 395px) {
+    .left img {
+        width: 65%;
+    }
+
+    section{
+        height: 130vh;
+    }
+
+    .third-section {
+        height: 100vh;
+    }
+
     .semi-left h1 {
         font-size: 25px;
         font-weight: 600;
@@ -1487,6 +1687,31 @@ footer {
     button {
         font-size: 8px;
         font-weight: 400;
+    }
+    
+    #ending {
+        width: 24%;
+        left: 12rem;
+        bottom: 11rem;
+    }
+
+    #ending .picture {
+        width: 2.5rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 326px) {
+    #ending {
+        width: 24%;
+        left: 10rem;
+        bottom: 10rem;
+    }
+
+    #ending .picture {
+        width: 2rem;
+        text-align: center;
     }
 }
 
@@ -1522,44 +1747,3 @@ footer {
     }
 }
 
-/* @media screen and (max-width: 345px) {
-
-    .semi-left {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .semi-left h1 {
-        font-size: 3rem;
-    }
-} */
-
-
-/* Styles for standard smartphones (up to 800px wide) */
-/* @media screen and (max-width: 800) { */
-    /* body {
-        max-width: 100%;
-        align-content: center
-    }
-
-    nav {
-        display: none;
-    }
-
-    .head > img {
-        display: block;
-    }
-
-    .first-section {
-        flex-direction: column;
-    }
-
-    .house {
-        width: 70%;
-    }
-
-    .house img {
-        width: 100%;
-    } */
-/* } */
