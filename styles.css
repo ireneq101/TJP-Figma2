@@ -286,6 +286,7 @@ section{
     /* right: 2rem; */
     bottom: 15rem;
     z-index: 1;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     justify-content: center;
@@ -304,6 +305,7 @@ section{
     left: 26rem;
     bottom: 17rem;
     z-index: 1;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     background: #FFF;
@@ -509,6 +511,15 @@ footer {
     margin-bottom: 3%;
 }
 
+
+@media screen and (max-width: 1443px) {
+    nav {
+        width: 27%;
+        display: flex;
+        /* justify-content: end; */
+        margin: 1% 6%;
+    }
+}
 
 @media screen and (max-width: 1388px) {
     section{
@@ -800,6 +811,10 @@ footer {
 }
 
 @media screen and (max-width: 1094px) {
+    section{
+        height: 70vh;
+    }
+
     .second-section h3 {
         padding-bottom: 8%;
         font-size: 20px;
@@ -824,10 +839,6 @@ footer {
 
     section{
         height: 90vh;
-    }
-
-    .third-section {
-        /* height: 100vh; */
     }
 
     .girl-frame p {
@@ -865,6 +876,10 @@ footer {
 
 
 @media screen and (max-width: 923px) {
+    section{
+        height: 50vh;
+    }
+
     .semi-left h1 {
         font-size: 35px;
         font-weight: 600;
@@ -921,10 +936,6 @@ footer {
 
     section{
         height: 90vh;
-    }
-
-    .third-section {
-        /* height: 100vh; */
     }
   
     .third-section {
@@ -1293,6 +1304,19 @@ footer {
     }
 }
 
+@media screen and (max-width: 767px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 150vh;
+    }
+
+    .third-section {
+        height: 120vh;
+    }
+}
+
 @media screen and (max-width: 722px) {
     .semi-left h1 {
         font-size: 57px;
@@ -1314,7 +1338,7 @@ footer {
     }
 
     section{
-        height: 175vh;
+        height: 145vh;
     }
 
     /* .third {
@@ -1384,6 +1408,17 @@ footer {
         height: 160vh;
     }
 
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 135vh;
+    }
+
+    .third-section {
+        height: 110vh;
+    }
+
     /* .third {
         width: 120%;
         padding: 7% 0;
@@ -1403,7 +1438,11 @@ footer {
 
 @media screen and (max-width: 585px) {
     section{
-        height: 162vh;
+        height: 132vh;
+    }
+
+    .third-section {
+        height: 100vh;
     }
 
     #link {
@@ -1485,17 +1524,23 @@ footer {
     }
 
     section{
-        height: 150vh;
+        height: 125vh;
+    }
+
+    .second-section h3 {
+        padding-bottom: 8%;
+        font-size: 28px;
+        font-weight: 600;
     }
 
     .third-section {
-        height: 120vh;
+        height: 100vh;
     }
 }
 
 @media screen and (max-width: 491px) {
     section{
-        height: 155vh;
+        height: 105vh;
     }
 
     .second-section {
@@ -1504,25 +1549,28 @@ footer {
     }
 
     .semi-left h1 {
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 35px;
+        font-weight: 600;
     }
 
     #eye {
         bottom: 14rem;
         padding: 4% 0 1% 0;
         width: 27%;
+        font-size: 16px;
     }
 
     #link {
         left: 17rem;
         bottom: 15rem;
-        width: 25%;
+        width: 27%;
+        font-size: 16px;
     }
 
     .third-section {
         width: 100%;
         padding: 0;
+        height: 90vh;
     }
 
     .semi-end {
@@ -1606,12 +1654,18 @@ footer {
     }
 
     section{
-        height: 150vh;
+        height: 105vh;
     }
 
-    /* .third-section {
-        height: 110vh;
-    } */
+    .second-section h3 {
+        padding-bottom: 8%;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .third-section {
+        height: 85vh;
+    }
 
     #ending {
         width: 24%;
@@ -1622,6 +1676,19 @@ footer {
     #ending .picture {
         width: 3rem;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 100vh;
+    }
+
+    .third-section {
+        height: 90vh;
     }
 }
 
@@ -1653,11 +1720,17 @@ footer {
     }
 
     section{
-        height: 50vh;
+        height: 10vh;
+    }
+
+    .second-section h3 {
+        padding-bottom: 8%;
+        font-size: 19px;
+        font-weight: 600;
     }
 
     .third-section {
-        height: 105vh;
+        height: 10vh;
     }
 }
 
@@ -1667,11 +1740,11 @@ footer {
     }
 
     section{
-        height: 130vh;
+        height: 110vh;
     }
 
     .third-section {
-        height: 100vh;
+        height: 90vh;
     }
 
     .semi-left h1 {
