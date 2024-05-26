@@ -19,7 +19,7 @@ header {
 }
 
 
-.head {
+header > .iren {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,24 +28,24 @@ header {
 
 
 
-.left {
+header > .iren > .left {
     display: flex;
     width: 40%;
     margin: 1% 6%;
 }
 
-.left img {
+header > .iren > .left img {
     width: 27%;
 }
 
 
-.head > img {
+header > .iren > img {
     display: none;
 }
 
 
 
-nav {
+header > .iren > nav {
     width: 23%;
     display: flex;
     /* justify-content: end; */
@@ -54,37 +54,37 @@ nav {
 
 
 
-nav a {
+header > .iren > nav a {
     text-decoration: none;
     color: black;
     padding: 2%;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
 
-.menu-icon {
+header > .iren > div .menu-icon {
     display: none;
     cursor: pointer;
 }
 
-.menu-icon-close {
+header > .iren > div .menu-icon-close {
     display: none;
     cursor: pointer;
 }
 
-.nav2 {
+header > .nav2 {
     display: none;
 }
 
 
-#blog {
+header > .iren > nav #blog {
     text-decoration: underline;
     text-decoration-color: #FFA800;
     line-height: 10px;
 }
 
 
-.sign {
+header > .iren > nav .sign {
     color: #FFA800;
 }
 
@@ -101,15 +101,15 @@ nav a {
 }
 
 
-.semi-left {
+.first-section > .semi-left {
     align-items: center;
     width: 50%;
     margin: 6% 6%;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
-.semi-left h1 {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+.first-section > .semi-left h1 {
     color: #000;
     font-size: 64px;
     font-weight: 600;
@@ -118,15 +118,11 @@ nav a {
     word-break: keep-all;
 }
 
-
-
-strong {
+.first-section > .semi-left strong {
     color: #FFA800;
 }
 
-
-
-.semi-left .class {
+.first-section > .semi-left > .class {
     color: #000;
     font-size: 24px;
     font-weight: 200;
@@ -134,9 +130,7 @@ strong {
     word-break: keep-all;
 }
 
-
-
-button {
+.first-section > .semi-left > button {
     border-radius: 8px;
     border: none;
     background: #FFBF23;
@@ -149,36 +143,33 @@ button {
     font-weight: 400;
 }
 
-
-
-.icons {
+.first-section > .semi-left > .icons {
      display: flex;
-     align-items: center;
+     align-content: center;
+     justify-content: center;
 }
 
-
-
-.icon {
+.first-section > .semi-left > .icons > .icon {
     display: flex;
     align-items: center;
+    justify-items: center;
     gap: 5%;
-    /* width: 50%; */
 }
 
-.icon img {
+.first-section > .semi-left > .icons > .icon img {
     width: 25%;
+    text-align: center;
 }
 
-
-.icon p {
+.first-section > .semi-left > .icons > .icon p {
     font-size: 16px;
     font-weight: 400;
-    margin-top: 13%;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
 }
 
-
-
-.house {
+.first-section > .house {
     width: 50%;
     align-items: center;
     /* padding-left: 10%; */
@@ -186,15 +177,11 @@ button {
 
 }
 
-
-
-.house img {
+.first-section > .house img {
     width: 100%;
     align-items: center;
     margin: auto;
 }
-
-
 
 section{
     background: #F5FAFF;
@@ -204,9 +191,7 @@ section{
     height: 120vh;
 }
 
-
-
-.second-section {
+section > .second-section {
     margin: 4% 0 0 6%;
     width: 45%;
     justify-content: space-around;
@@ -214,9 +199,7 @@ section{
     padding: 15% 0 16% 0;
 }
 
-
-
-.second-section h3 {
+section > .second-section h3 {
     word-break: keep-all;
     padding-bottom: 8%;
     color: #141414;
@@ -227,9 +210,7 @@ section{
     line-height: 150%;
 }
 
-
-
-.second-section p {
+section > .second-section p {
     word-break: keep-all;
     font-size: 18px;
     font-weight: 400;
@@ -240,9 +221,7 @@ section{
     line-height: 150%;
 }
 
-
-
-.second-section .learn {
+section > .second-section .learn {
     margin-top: 0;
     border-radius: 8px;
     border: 1px solid #464E5F;
@@ -254,9 +233,7 @@ section{
     font-family: 'Inter', sans-serif;
 }
 
- 
-
-.house2 {
+section > .house2 {
     margin: 4% 4%;
     width: 50%;
     justify-content: space-around;
@@ -266,22 +243,18 @@ section{
     /* padding: 5% 0; */
 }
 
-
-#ire {
+section > .house2 > #ire {
     /* width: 50%; */
     padding-top: 13%;
     padding-left: 15%;
     position: relative;
 }
 
-#ire img {
+section > .house2 > #ire img {
     width: 100%;
 }
 
-
-
-
-#eye {
+section > .house2 > #eye {
     position: relative;
     /* right: 2rem; */
     bottom: 15rem;
@@ -291,18 +264,16 @@ section{
     font-family: 'Inter', sans-serif;
     justify-content: center;
     text-align: center;
-    padding: 4% 0 1% 0;
+    padding: 6% 0 6% 0;
     width: 30%;
     border-radius: 16px;
     background: #FFF;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
 }
 
-
-
-#link {
+section > .house2 > #link {
     position: relative;
-    left: 26rem;
+    left: 28rem;
     bottom: 17rem;
     z-index: 1;
     font-size: 18px;
@@ -313,13 +284,11 @@ section{
     justify-content: center;
     text-align: center;
     border-radius: 16px;
-    padding: 4% 0 1% 0;
+    padding: 6% 0 6% 0;
     width: 30%;
 }
 
-
-
-.house2 p {
+section > .house2 p {
     line-height:  36px;
     font-family: 'Inter', sans-serif;
 }
@@ -333,12 +302,12 @@ section{
     align-content: center;
     padding: 130px 130px 0 130px;
     margin: auto;
-    /* gap: 30px; */
+    gap: 30px;
     background-color: white;
 }
 
 
-.third {
+.third-section > .third {
     width: 50%;
     gap: 0;
     margin: 0 0 0 9%;
@@ -346,27 +315,19 @@ section{
 }
 
 
-.bed-room {
+.third-section > .third > #bed-room {
     /* width: 50%; */
     position: relative;
     align-items: center;
 }
 
-#bed-room img {
+.third-section > .third > #bed-room img {
     width: 100%;
 }
 
 
-.semi-end {
-    word-break: keep-all;
-    width: 50%;
-    /* height: 110vh; */
-    padding: 9% 0 0 2%;
-    margin: 0;
-}
 
-
-.girl-frame {
+.third-section > .third > .girl-frame {
     position: relative;
     align-items: center;
     z-index: 1;
@@ -381,7 +342,7 @@ section{
 
 
 
-#joyframe {
+.third-section > .third > .girl-frame > #joyframe {
     margin-top: 15%;
     margin-left: 10px;
     padding-left: -20%;
@@ -389,7 +350,7 @@ section{
 
 
 
-.girl-frame p {
+.third-section > .third > .girl-frame > #joyframe p {
     align-items: center;
     margin-left: 30%;
     /* margin-top: 4%; */
@@ -403,7 +364,7 @@ section{
 
 
 
-#logo {
+.third-section > .third > .girl-frame > #joyframe #logo {
     display: flex;
     font-weight: 700;
     font-size: 24px;
@@ -415,7 +376,7 @@ section{
 
 
 
-#social {
+.third-section > .third >.girl-frame >  #social {
     margin-left: 30%;
     margin-top: 10%;
     align-items: center;
@@ -425,7 +386,7 @@ section{
 
 
 
-#ending {
+.third-section > .third > #ending {
     position: relative;
     display: flex;
     width: 26%;
@@ -439,21 +400,36 @@ section{
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
 }
 
-#ending .picture {
+.third-section > .third > #ending .picture {
     width: 7rem;
 }
 
+.third-section > .semi-end {
+    word-break: keep-all;
+    width: 50%;
+    /* height: 110vh; */
+    padding: 9% 0 0 2%;
+    margin: 0;
+}
 
 
-.semi-end h2, p {
+.third-section > .semi-end h2 {
     margin-bottom: 30px;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    color: #141414;
+}
+
+.third-section > .semi-end p {
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 
 
-.semi-end li {
+.third-section > .semi-end li {
     margin-bottom: 30px;
     margin-left: 5%;
     font-family: 'Inter', sans-serif;
@@ -461,7 +437,7 @@ section{
 }
 
 
-.last-button {
+.third-section > .semi-end > .last-button {
     border-radius: 8px;
     border: 1px solid #464E5F;
     background-color: transparent;
@@ -473,7 +449,28 @@ section{
 }
 
 
-#tag p {
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+footer > #foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6%;
+    /* gap: 30%; */
+}
+
+footer > #foot #last-frame {
+    width: 20%;
+}
+
+footer > #foot #last-frame img {
+    width: 80%;
+}
+
+footer > #foot > #tag p {
     margin-top: 5%;
     margin-bottom: 24px;
     color: rgba(255, 255, 255, 1);
@@ -483,1340 +480,1434 @@ section{
     font-weight: 500;
 }
 
-
-
-footer {
-    background-color: black;
-    width: 100%;
+footer > #foot > #tag {
+    width: 33%;
 }
 
 
-
-#foot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 6%;
-    /* gap: 30%; */
-}
-
-#last-frame img {
-    width: 80%;
-}
-
-#internet {
+footer > #foot > #tag > #internet {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
     margin-bottom: 3%;
+    width: 100%;
 }
 
-
-@media screen and (max-width: 1443px) {
-    nav {
-        width: 27%;
-        display: flex;
-        /* justify-content: end; */
-        margin: 1% 6%;
-    }
+footer > #foot > #tag > #internet img {
+    width: 10%;
 }
 
-@media screen and (max-width: 1388px) {
-    section{
-        height: 116vh;
-    }
-
-    .house2 {
-        width: 50%;
-        overflow-wrap: content-box;
-    }
-
-    #eye {
-        bottom: 15rem;
-        font-weight: 500;
-        padding: 4% 0 1% 0;
-        width: 27%;
-    }
-
-    #link {
-        left: 24rem;
-        bottom: 17rem;
-        font-weight: 500;
-        padding: 4% 0 1% 0;
-        width: 27%;
-    }
-}
-
-@media screen and (max-width: 1313px) {
-    .semi-left h1 {
-        font-size: 55px;
-        font-weight: 600;
-    }
-
-    section{
-        height: 105vh;
-    }
-
-    #ire {
-        padding-top: 15%;
-        padding-left: 15%;
-    }
-
-    /* #bed-room img {
-        width: 90%;
-    }
-
-    .semi-end {
-        word-break: keep-all;
-        width: 50%;
-        padding: 5% 0 0 2%;
-    } */
-
-    nav {
-     width: 40%;
-    }
-
-    nav a {
-        padding: 2%;
-        font-size: 16px;
-    }
-
-    .left img {
-        width: 33%;
-    }
-}
-
-@media screen and (max-width: 1383px) {
-    .semi-end {
-        word-break: keep-all;
-        width: 50%;
-        padding: 5% 0 0 1%;
-    }
-
-    #ending .picture {
-        width: 5rem;
-    }
-
-    #ending {
-        width: 24%;
-        bottom: 15rem;
-        left: 21rem;
-        padding: 16px;
-    }
-}
-
-/* @media screen and (max-width: 1258px) {
-    .third {
-        width: 40%
-    }
-
-    #bed-room img {
-        width: 90%;
-    }
-
-    .semi-end {
-        word-break: keep-all;
-        width: 50%;
-        padding: 5% 0 0 2%;
-    }
-} */
-
-@media screen and (max-width: 1259px) {
-    section{
-        height: 90vh;
-    }
-
-    .third-section {
-        height: 120vh;
-        /* padding: 130px 130px 0 130px; */
-    }
-
-    .third {
-        width: 40%
-    }
-
-    #bed-room img {
-        width: 90%;
-    }
-
-    .girl-frame {
-        width: 66%;
-        bottom: 5rem;
-        right: 7rem;
-        padding: 1px 0;
-    }
-
-    #joyframe {
-        margin-top: 15%;
-        margin-left: 10px;
-        padding-left: -20%;
-    }
-
-    #joyframe img {
-        width: 20%;
-    }
-
-    .girl-frame p {
-        margin-left: 28%;
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    #logo {
-        font-weight: 800;
-        font-size: 20px;
-        margin-left: 40%;
-        margin-top: -30%;
-    }
-
-    #social {
-        margin-left: 27%;
-        margin-top: 4%;
-        justify-content: center;
-        gap: 3px;
-    }
-
-    #ending {
-        width: 27%;
-        bottom: 11rem;
-        left: 13rem;
-        padding: 16px;
-    }
-
-    #ending .picture {
-        width: 4rem;
-    }
-
-    .semi-end {
-        width: 50%;
-        padding: 3% 0 0 0;
-    }
-
-    .semi-end h2, p {
-        margin-bottom: 20px;
-        font-weight: 500;
-    }
-    
-    .semi-end li {
-        margin-bottom: 20px;
-        margin-left: 5%;
-        font-weight: 500;
-    }
-    
-    .last-button {
-        border: 1px solid #464E5F;
-        padding: 14px 24px;
-        margin-top: 2px;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 1219px) {
-    #ire {
-        padding-top: 25%;
-        padding-left: 15%;
-    }
-
-    .second-section p {
-        padding-bottom: 0;
-    }
-
-    #ire img {
-        width: 90%
-    }
-
-    #eye {
-        bottom: 12rem;
-        font-weight: 500;
-        padding: 4% 0 0 0;
-        width: 25%;
-    }
-
-    #link {
-        left: 20rem;
-        bottom: 16rem;
-        font-weight: 500;
-        padding: 4% 0 0 0;
-        width: 25%;
-    }
-
-}
-
-@media screen and (max-width: 1128px) {
-    .semi-left h1 {
-        font-size: 45px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 20px;
-        font-weight: 200;
-    }
-
-    #ire {
-        padding-top: 20%;
-        padding-left: 15%;
-    }
-
-    .icon {
-        gap: 5%;
-    }
-    
-    
-    .icon p {
-        font-size: 12px;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 1104px) {
-    .second-section h3 {
-        padding-bottom: 8%;
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .second-section p {
-        font-weight: 400;
-        padding-bottom: 3%;
-        font-size: 15px;
-    }
-
-    section{
-        height: 95vh;
-    }
-
-    .semi-end {
-        width: 50%;
-        padding: 2% 0 0 0;
-    }
-
-    .semi-end h2, p {
-        margin-bottom: 10px;
-        font-weight: 500;
-    }
-    
-    .semi-end li {
-        margin-bottom: 10px;
-        margin-left: 5%;
-        font-weight: 500;
-    }
-    
-    .last-button {
-        border: 1px solid #464E5F;
-        padding: 14px 24px;
-        margin-top: 2px;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 1094px) {
-    section{
-        height: 70vh;
-    }
-
-    .second-section h3 {
-        padding-bottom: 8%;
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .second-section p {
-        padding-bottom: 0;
-    }
-
-    #link {
-        left: 17rem;
-        bottom: 15rem;
-        font-weight: 500;
-        width: 25%;
-    }
-
-    #ire {
-        padding-top: 30%;
-        padding-left: 15%;
-    }
-
-    section{
-        height: 90vh;
-    }
-
-    .girl-frame p {
-        margin-left: 25%;
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    .girl-frame {
-        width: 75%;
-        bottom: 5rem;
-        right: 6rem;
-        padding: 1px 0;
-    }
-
-    #social {
-        margin-left: 27%;
-        margin-top: 3%;
-        justify-content: center;
-        gap: 3px;
-        /* width: 20%; */
-    }
-
-    #ending {
-        width: 27%;
-        bottom: 11rem;
-        left: 11rem;
-        padding: 16px;
-    }
-
-    #ending .picture {
-        width: 3rem;
-    }
-}
-
-
-@media screen and (max-width: 923px) {
-    section{
-        height: 50vh;
-    }
-
-    .semi-left h1 {
-        font-size: 35px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 18px;
-        font-weight: 200;
-    }
-
-    button {
-        font-size: 13px;
-        font-weight: 400;
-    }
-
-    .icon {
-        gap:5%;
-    }
-
-    .icon img {
-        width: 28%;
-    }
-    
-    .icon p {
-        font-size: 10px;
-        font-weight: 400;
-        margin-top: 20%;
-    }
-
-    .house {
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 977px) {
-    .icon {
-        gap: 5%;
-    }
-    
-    
-    .icon p {
-        font-size: 10px;
-        font-weight: 400;
-    }
-
-    #link {
-        left: 15rem;
-        bottom: 14rem;
-        font-weight: 500;
-        width: 25%;
-    }
-
-    section{
-        height: 90vh;
-    }
-  
-    .third-section {
-        width: 100%;
-        height: 140vh;
-        display: flex;
-        padding: 20px 0;
-        margin-top: 200px;
-        flex-direction: column-reverse;
-    }
-    
-    
-    .third {
-        width: 80%;
-        margin: 0 0 0 9%;
-    }
-    
-    
-    .bed-room {
-        align-items: center;
-    }
-    
-    #bed-room img {
-        width: 100%;
-    }
-    
-    .semi-end {
-        width: 100%;
-        padding: 9% 0 0 2%;
-        margin: 15% 0 0 0;
-    }
-    
-    .girl-frame {
-        width: 55%;
-        bottom: 7rem;
-        right: 5rem;
-        padding: 10px;
-    }
-    
-    #joyframe {
-        margin-top: 15%;
-        margin-left: 10px;
-        padding-left: -20%;
-    }
-    
-    .girl-frame p {
-        margin-left: 30%;
-        font-size: 14px;
-        font-weight: 400;
-    }    
-    
-    #logo {
-        font-weight: 700;
-        font-size: 24px;
-        margin-left: 30%;
-        margin-top: -30%;
-    }
-    
-    #social {
-        margin-left: 30%;
-        margin-top: 10%;
-        justify-content: space-around;
-    }
-    
-    #ending {
-        width: 24%;
-        bottom: 16rem;
-        left: 26rem;
-        padding: 16px;
-    }
-    
-    #ending .picture {
-        width: 7rem;
-        text-align: center;
-    }
-    
-    .semi-end h2, p {
-        margin-bottom: 30px;
-        font-weight: 500;
-    }
-    
-    .semi-end li {
-        margin-bottom: 30px;
-        margin-left: 5%;
-        font-weight: 500;
-    }
-    
-    .last-button {
-        padding: 14px 40%;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 861px) {
-    .left img {
-        width: 45%;
-    }
-
-    .semi-left h1 {
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 15px;
-        font-weight: 200;
-    }
-
-    button {
-        font-size: 10px;
-        font-weight: 400;
-    }
-
-    section{
-        height: 83vh;
-    }
-
-    #ending {
-        width: 25%;
-        bottom: 15rem;
-        left: 26rem;
-        padding: 16px;
-    }
-
-    #ending .picture {
-        width: 6rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 787px) {
-    nav {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header > .iren > nav {
         display: none;
     }
 
-    .menu-icon{
+    header > .iren > div .menu-icon{
         display: block;
     }
 
-    .menu-icon.hide {
+    header > .iren > div .menu-icon.hide {
         display: none;
     }
 
-    .menu-icon-close.hide{
+    header > .iren > div .menu-icon-close.hide{
         display: block;
     }
 
-    .nav2.visible {
+    header > .nav2 {
+        position: static;
+        top: 0;
+        z-index: 3;
+    }
+
+    header > .nav2.visible {
         display: flex;
         flex-direction: column;
         background: var(--Background, #F3F6F1);
-        gap: 72px;
+        gap: 40px;
         height: 100vh;
-        /* margin: 0 7%; */
+        width: 100%;
+        position: static;
+        top: 0;
+        z-index: 3;
     }
 
-    .nav2.visible a {
+    header > .nav2.visible a {
         text-decoration: none;
         font-size: 18px;
         margin-top: 48px;
         color: #141414;
         text-align: center;
-        font-family: 'Clash Grotesk';
+        font-family: 'Inter', sans-serif;
         font-size: 18px;
         font-weight: 600;
     }
 
-    .nav2 hr {
+    header > .nav2 hr {
         margin: 0 15%;
     }
 
-   
+    header > .nav2 #blog {
+        text-decoration: none;
+    }
+
+
     header {
-        padding: 17px;
+        padding: 10px;
     }
 
-    .head {
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        margin: auto;
+    header > .iren > .left {
+        width: 40%;
+        padding: 0;
+        margin: 0;
     }
 
-    .head > img {
+    header > .iren > .left img {
         display: block;
-        margin: 0 0 0 10%;
-        width: 50%;
+        margin: 0;
+        width: 90%;
     }
-
-    .left {
-        margin: 1% 4%;
-    }
-
-    .left img {
-        width: 45%;
-    }
-
-    .semi-end {
+    
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
         width: 100%;
-        padding: 15% 0 0 2%;
-    }
-
-    .last-button {
-        border-radius: 8px;
-        border: 1px solid #464E5F;
-        padding: 14px 37%;
-    }
-
-    /* .third {
-        width: 110%;
-        gap: 0;
-        margin: 0 0 0 9%;
-    } */
-
-    #bed-room img {
-        width: 100%;
+        padding: 0 2%;
     }    
 
-    .girl-frame {
-        width: 58%;
+    .first-section > .semi-left h1 {
+        font-size: 2rem;
+        word-break: keep-all;
+    }
+    
+    .first-section > .semi-left {
+        text-align: left;
+        width: 100%;
+        margin: 6% 0;
+    }    
+    
+    .first-section > .semi-left > .class {
+        font-size: 1rem;
+        word-break: keep-all;
+        padding-bottom: 5%;
+    }    
+    
+    .first-section > .semi-left > button {
+        margin-top: 2%;
+        font-size: 1rem;
+    }   
+    
+    
+    .first-section > .semi-left > .icons {
+         display: flex;
+         align-items: center;
+         margin-top: 7%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        flex-direction: column;
+        /* width: 50%; */
+    }
+    
+    .first-section > .semi-left > .icons > .icon img {
+        width: 35%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon p {
+        font-size: 1rem;
+        text-align: center;
+    }
+        
+    .first-section > .house {
+        width: 100%;
+        align-items: center;    
+    }
+    
+    .first-section > .house img {
+        width: 100%;
+        margin: auto;
+    }  
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+        padding: 0 2%;
+    }   
+    
+    section > .second-section {
+        margin: 4% 0;
+        width: 100%;
+        padding: 0;
+    }    
+    
+    section > .second-section h3 {
+        word-break: keep-all;
+        padding-bottom: 8%;
+        font-size: 1.5rem;
+    }
+    
+    section > .second-section p {
+        word-break: keep-all;
+        font-size: 1rem;
+        padding-bottom: 9%;
+    }    
+    
+    section > .second-section .learn {
+        margin-top: 0;
+        font-size: 1rem;
+    }   
+    
+    section > .house2 {
+        margin: 0;
+        width: 100%;
+        position: relative;
+    }   
+    
+    section > .house2 > #ire {
+        padding-top: 13%;
+        padding-left: 15%;
+        position: relative;
+        width: 100%;
+    }
+    
+    section > .house2 > #ire img {
+        width: 100%;
+    }
+    
+    section > .house2 > #eye {
+        position: relative;
         bottom: 7rem;
-        right:4rem;
-        padding: 12px;
-    }
-    
-    #joyframe {
-        margin-top: 15%;
-        margin-left: 10px;
-        padding-left: -20%;
-    }
-    
-    .girl-frame p {
-        margin-left: 30%;
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 4%;
+        z-index: 1;
+        font-size: 1rem;
+        padding: 2% 0 1% 0;
+        width: 30%;
     }    
     
-    #logo {
-        font-weight: 700;
-        font-size: 24px;
+    section > .house2 > #link {
+        position: absolute;
+        left: 16rem;
+        bottom: 3rem;
+        z-index: 1;
+        font-size: 1rem;
+        padding: 2% 0 1% 0;
+        width: 30%;
+    }    
+    
+    section > .house2 p {
+        line-height:  36px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .third-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        margin: 20% auto;
+    }
+    
+    .third-section > .third {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .third-section > .third > #bed-room {
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+    
+    .third-section > .third > #bed-room img {
+        width: 100%;
+    }
+    
+    .third-section > .third > .girl-frame {
+        position: relative;
+        z-index: 1;
+        bottom: 5rem;
+        right: 2rem;
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe {
+        margin-top: 5%;
+        margin-left: 10px;
+        padding-left: 0%;
+    } 
+    
+    .third-section > .third > .girl-frame > #joyframe img {
+        width: 24%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe p {
+        font-size: 12px;
+        padding-bottom: 2%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe #logo {
+        font-size: 1.3rem;
         margin-left: 30%;
         margin-top: -30%;
     }
     
-    #social {
-        margin-left: 30%;
-        margin-top: 10%;
+    .third-section > .third >.girl-frame >  #social {
+        margin-left: 20%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-evenly;
+    }    
+    
+    .third-section > .third > #ending {
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        bottom: 23rem;
+        left: 16rem;
+        padding: 1rem;
     }
     
-    #ending {
-        width: 24%;
-        left: 25rem;
-        bottom: 16rem;
+    .third-section > .third > #ending .picture {
+        width: 100%;
     }
     
-    #ending .picture {
-        width: 6rem;
+    .third-section > .semi-end {
+        word-break: keep-all;
+        width: 100%;
+        /* height: 110vh; */
+        padding: 0 2%;
+        margin: 0;
+    }
+    
+    .third-section > .semi-end h2 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    .third-section > .semi-end p {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .third-section > .semi-end > .last-button {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    footer {
+        width: 100%;
+        padding: 7% 0;
+    }
+    
+    footer > #foot {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    footer > #foot #last-frame {
+        width: 45%;
+    }
+    
+    footer > #foot #last-frame img {
+        width: 100%;
+    }
+    
+    footer > #foot > #tag p {
+        margin-bottom: 0;
+        font-size: 1rem;
+        width: 100%;
         text-align: center;
+    }
+    
+    footer > #foot > #tag {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    
+    footer > #foot > #tag > #internet {
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        width: 100%;
+    }
+    
+    footer > #foot > #tag > #internet img {
+        width: 7%;
     }
 }
 
-
-@media screen and (max-width: 787px) {
-    /* nav {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header > .iren > nav {
         display: none;
     }
 
-    .head > img {
+    header > .iren > div {
+        width: 15%;
+        text-align: center;
+    }
+
+    header > .iren > div img {
+        width: 40%;
+    }
+
+    header > .iren > div .menu-icon{
         display: block;
-    } */
+    }
 
+    header > .iren > div .menu-icon.hide {
+        display: none;
+    }
+
+    header > .iren > div .menu-icon-close.hide{
+        display: block;
+    }
+
+    header > .nav2 {
+        position: static;
+        top: 0;
+        z-index: 3;
+        width: 45%;
+    }
+
+    header > .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Background, #F3F6F1);
+        gap: 5rem;
+        height: 100vh;
+        width: 100%;
+        position: static;
+        top: 0;
+        z-index: 3;
+    }
+
+    header > .nav2.visible a {
+        text-decoration: none;
+        font-size: 3rem;
+        margin-top: 48px;
+        color: #141414;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+    }
+
+    header > .nav2 hr {
+        margin: 0 15%;
+    }
+
+    header > .nav2 #blog {
+        text-decoration: underline;
+        text-decoration-color: #FFA800;
+    }
+
+
+    header {
+        padding: 10px;
+    }
+
+    header > .iren > .left {
+        width: 40%;
+        padding: 0 0 0 4%;
+        margin: 0;
+    }
+
+    header > .iren > .left img {
+        display: block;
+        margin: 0;
+        width: 95%;
+    }
+    
     .first-section {
-        flex-direction: column;
-    }
-
-    .semi-left {
-        align-items: center;
-        width: 80%;
-        margin: 6% 6%;
-    }
-
-    .semi-left h1 {
-        font-size: 64px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 24px;
-        font-weight: 200;
-    }
-
-    button {
-        padding: 3% 35%;
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-    .icon p {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 13%;
-    }
-    
-    .house {
-        width: 100%;
-        align-items: center;
-    }
-
-    section{
         display: flex;
         flex-direction: column;
         margin: auto;
-        height: 190vh;
-    }
-
-    .second-section {
-        margin: 4% 0 0 8%;
-        width: 90%;
-        padding: 15% 0 0 0;
-    }
-
-    .second-section h3 {
-        padding-bottom: 8%;
-        font-size: 32px;
-        font-weight: 600;
-    }
-    
-    .second-section p {
-        font-size: 18px;
-        font-weight: 400;
-        padding-bottom: 9%;
-    }
-    
-    .second-section .learn {
-        padding: 3% 35%;
-    }
-
-    .house2 {
-        margin: 0 4%;
-        width: 90%;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    #ire {
-        padding-top: 13%;
-        padding-left: 15%;
-    }
-    
-    #ire img {
         width: 100%;
-    }
+        padding: 0 4%;
+    }  
     
-    #eye {
-        bottom: 17rem;
-        padding: 4% 0 1% 0;
-        width: 27%;
-    }
-    
-    #link {
-        left: 26rem;
-        bottom: 19rem;
-        padding: 4% 0 1% 0;
-        width: 27%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    section{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        height: 150vh;
-    }
-
-    .third-section {
-        height: 120vh;
-    }
-}
-
-@media screen and (max-width: 722px) {
-    .semi-left h1 {
-        font-size: 57px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 20px;
-        font-weight: 200;
-    }
-
-    #link {
-        left: 24rem;
-        width: 25%;
-    }
-
-    #eye {
-        width: 25%;
-    }
-
-    section{
-        height: 145vh;
-    }
-
-    /* .third {
-        width: 115%;
-        padding: 7% 0;
-    } */
-
-    #bed-room img {
+    .first-section > .semi-left {
+        text-align: left;
         width: 100%;
-    } 
+        margin: 6% 0;
+    }    
 
-    .girl-frame {
-        width: 58%;
-        bottom: 7rem;
-        right: 3rem;
-        padding: 12px;
+    .first-section > .semi-left h1 {
+        font-size: 4rem;
+        word-break: keep-all;
     }
-
-    .girl-frame p {
-        margin-left: 30%;
-        font-size: 13px;
-        font-weight: 400;
-        margin-top: 4%;
+       
+    .first-section > .semi-left > .class {
+        font-size: 2rem;
+        word-break: keep-all;
+        padding-bottom: 5%;
     }    
     
-    #logo {
-        font-weight: 700;
-        font-size: 24px;
-        margin-left: 30%;
-        margin-top: -30%;
-    }
+    .first-section > .semi-left > button {
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }   
     
-    #social {
-        margin-left: 30%;
-        margin-top: 10%;
-    }
     
-    #ending {
-        width: 24%;
-        left: 21rem;
-        bottom: 16rem;
-    }
+    .first-section > .semi-left > .icons {
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         margin-top: 7%;
+    }    
     
-    #ending .picture {
-        width: 5rem;
+    .first-section > .semi-left > .icons > .icon {
+        display: flex;
+        align-items: center;
+        gap: 5%;
         text-align: center;
+        /* width: 50%; */
     }
-}
-
-@media screen and (max-width: 643px) {
-    .semi-left h1 {
-        font-size: 50px;
-        font-weight: 600;
+    
+    .first-section > .semi-left > .icons > .icon img {
+        width: 30%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon p {
+        font-size: 1.5rem;
+        text-align: left;
     }
-
-    .semi-left .class {
-        font-size: 18px;
-        font-weight: 600;
+        
+    .first-section > .house {
+        width: 100%;
+        align-items: center; 
+        text-align: center;   
     }
-
-    button {
-        font-size: 13px;
-        font-weight: 400;
-    }
-
-    section{
-        height: 160vh;
-    }
-
+    
+    .first-section > .house img {
+        width: 100%;
+        margin: auto;
+    }  
+    
     section{
         display: flex;
         flex-direction: column;
         margin: auto;
-        height: 135vh;
-    }
-
-    .third-section {
-        height: 110vh;
-    }
-
-    /* .third {
-        width: 120%;
-        padding: 7% 0;
-    } */
-}
-
-@media screen and (max-width: 686px) {
-    .semi-end {
+        height: auto;
+        padding: 0 4%;
         width: 100%;
-        padding: 27% 0 0 2%;
-    }
-
-    .last-button {
-        padding: 14px 36%;
-    }
-} 
-
-@media screen and (max-width: 585px) {
-    section{
-        height: 132vh;
-    }
-
-    .third-section {
-        height: 100vh;
-    }
-
-    #link {
-        left: 20rem;
-        bottom: 17rem;
-        width: 25%;
-    }
-
-    .girl-frame {
-        width: 58%;
-        bottom: 7rem;
-        right: 3rem;
-        padding: 12px;
-    }
-
-    .girl-frame p {
-        margin-left: 30%;
-        font-size: 10px;
-        font-weight: 400;
-        margin-top: 4%;
-    }    
+    }   
     
-    #logo {
-        font-weight: 700;
-        font-size: 24px;
-        margin-left: 30%;
-        margin-top: -30%;
-    }
-    
-    #social {
-        margin-left: 30%;
-        margin-top: 6%;
-    }
-    
-    #ending {
-        width: 24%;
-        left: 16rem;
-        bottom: 14rem;
-    }
-    
-    #ending .picture {
-        width: 3.5rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 564px) {
-    .left img {
-        width: 55%;
-    }
-
-    .icon {
-        gap:5%;
-    }
-
-    .icon img {
-        width: 28%;
-    }
-    
-    .icon p {
-        font-size: 12px;
-        font-weight: 400;
-        margin-top: 20%;
-    }
-
-    .semi-left h1 {
-        font-size: 35px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    button {
-        font-size: 10px;
-        font-weight: 400;
-    }
-
-    section{
-        height: 125vh;
-    }
-
-    .second-section h3 {
-        padding-bottom: 8%;
-        font-size: 28px;
-        font-weight: 600;
-    }
-
-    .third-section {
-        height: 100vh;
-    }
-}
-
-@media screen and (max-width: 491px) {
-    section{
-        height: 105vh;
-    }
-
-    .second-section {
-        margin: 4% 0 0 8%;
-        width: 90%;
-    }
-
-    .semi-left h1 {
-        font-size: 35px;
-        font-weight: 600;
-    }
-
-    #eye {
-        bottom: 14rem;
-        padding: 4% 0 1% 0;
-        width: 27%;
-        font-size: 16px;
-    }
-
-    #link {
-        left: 17rem;
-        bottom: 15rem;
-        width: 27%;
-        font-size: 16px;
-    }
-
-    .third-section {
+    section > .second-section {
+        margin: 4% 0;
         width: 100%;
         padding: 0;
-        height: 90vh;
+    }    
+    
+    section > .second-section h3 {
+        word-break: keep-all;
+        padding-bottom: 8%;
+        font-size: 3rem;
     }
-
-    .semi-end {
+    
+    section > .second-section p {
+        word-break: keep-all;
+        font-size: 2rem;
+        padding-bottom: 9%;
+    }    
+    
+    section > .second-section .learn {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }   
+    
+    section > .house2 {
+        margin: 0;
         width: 100%;
-        padding: 15% 0 0 2%;
+        position: relative;
+    }   
+    
+    section > .house2 > #ire {
+        padding-top: 13%;
+        padding-left: 15%;
+        position: relative;
+        width: 100%;
+    }
+    
+    section > .house2 > #ire img {
+        width: 100%;
+    }
+    
+    section > .house2 > #eye {
+        position: relative;
+        bottom: 16rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    }    
+    
+    section > .house2 > #link {
+        position: absolute;
+        left: 28rem;
+        bottom: 5rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    }    
+    
+    .third-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+        margin: 20% auto;
+    }
+    
+    .third-section > .third {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .third-section > .third > #bed-room {
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+    
+    .third-section > .third > #bed-room img {
+        width: 100%;
+    }
+    
+    .third-section > .third > .girl-frame {
+        position: relative;
+        z-index: 1;
+        bottom: 7rem;
+        right: 2rem;
+        padding: 2.2rem 1rem;
+        width: 60%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe {
+        margin-top: 5%;
+        margin-left: 10px;
+        padding-left: 0%;
+    } 
+    
+    .third-section > .third > .girl-frame > #joyframe img {
+        width: 26%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe p {
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe #logo {
+        font-size: 1.5rem;
+        margin-left: 30%;
+        margin-top: -30%;
+    }
+    
+    .third-section > .third >.girl-frame >  #social {
+        margin-left: 20%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-evenly;
+    }    
+    
+    .third-section > .third > #ending {
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        bottom: 6rem;
+        left: 30rem;
+        padding: 1.5rem;
+    }
+    
+    .third-section > .third > #ending .picture {
+        width: 100%;
+    }
+    
+    .third-section > .semi-end {
+        word-break: keep-all;
+        width: 100%;
+        /* height: 110vh; */
+        padding: 0 2%;
+        margin: 0;
+    }
+    
+    .third-section > .semi-end h2 {
+        font-weight: 600;
+        font-size: 2.2rem;
+    }
+    
+    .third-section > .semi-end p {
+        font-weight: 500;
+        font-size: 1.5rem;
     }
 
-    .semi-end h2, p {
-        margin-bottom: 20px;
+    .third-section > .semi-end li {
+        margin-bottom: 30px;
+        margin-left: 5%;
+        font-size: 1.2rem;
         font-weight: 500;
     }
     
-    .semi-end li {
-        margin-bottom: 25px;
-        margin-left: 0;
-        font-weight: 400;
-    } 
-}
-
-@media screen and (max-width: 447px) {
-    section{
-        height: 70vh;
-    }
-
-    .third-section {
-        height: 105vh;
-    }
-
-    .girl-frame {
-        width: 52%;
-        bottom: 4rem;
-        right: 1rem;
-        padding: 5px 0;
-    }
-
-    .girl-frame p {
-        margin-left: 30%;
-        font-size: 7px;
-        font-weight: 400;
-        margin-top: 4%;
-    }    
-    
-    #logo {
-        font-weight: 700;
-        font-size: 20px;
-        margin-left: 30%;
-        margin-top: -25%;
+    .third-section > .semi-end > .last-button {
+        font-size: 1.2rem;
+        padding: 1rem;
     }
     
-    #social {
-        margin-left: 30%;
-        margin-top: 4%;
-        justify-content: space-evenly;
+    footer {
+        width: 100%;
+        padding: 7% 0;
     }
     
-    #ending {
-        width: 24%;
-        left: 12rem;
-        bottom: 10rem;
-    }
-    
-    #ending .picture {
-        width: 2rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 444px) {
-    .icon img {
-        width: 28%;
-    }
-    
-    .icon p {
-        font-size: 10px;
-        font-weight: 400;
-    }
-
-    #link {
-        left: 15rem;
-        bottom: 15rem;
-    }
-
-    section{
-        height: 105vh;
-    }
-
-    .second-section h3 {
-        padding-bottom: 8%;
-        font-size: 23px;
-        font-weight: 600;
-    }
-
-    .third-section {
-        height: 85vh;
-    }
-
-    #ending {
-        width: 24%;
-        left: 14rem;
-        bottom: 11rem;
-    }
-
-    #ending .picture {
-        width: 3rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 395px) {
-    section{
+    footer > #foot {
         display: flex;
         flex-direction: column;
+        margin: 0;
+    }
+    
+    footer > #foot #last-frame {
+        width: 45%;
+    }
+    
+    footer > #foot #last-frame img {
+        width: 100%;
+    }
+    
+    footer > #foot > #tag p {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > #foot > #tag {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    
+    footer > #foot > #tag > #internet {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        width: 100%;
+    }
+    
+    footer > #foot > #tag > #internet img {
+        width: 5%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-width: 800px) {
+    header > .nav2 {
+        display: none;
+    }
+
+    header > .iren > nav {
+        display: flex;
+        width: 45%;
+        text-align: center;
+        margin: 0;
+    }
+
+    header > .iren > nav a {
+        padding: 3%;
+        text-align: right;
+        font-size: 1.5rem;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: 600;
+    }
+
+    header > .iren > nav #blog {
+        text-align: right;
+        font-size: 1.5rem;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: 600;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header > .iren > .left {
+        width: 25%;
+        padding: 0 0 0 4%;
+        margin: 0;
+    }
+
+    header > .iren > .left img {
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .first-section {
+        display: flex;
+        justify-content: space-between;
         margin: auto;
-        height: 100vh;
-    }
-
-    .third-section {
-        height: 90vh;
-    }
-}
-
-@media screen and (max-width: 355px) {
-    .icon {
-        gap:3%;
-    }
-
-    .icon img {
-        width: 23%;
-    }
+        width: 100%;
+        padding: 0 4%;
+    }  
     
-    .icon p {
-        font-size: 10px;
-        font-weight: 200;
+    .first-section > .semi-left {
+        text-align: left;
+        width: 50%;
+        margin: 6% 0;
     }
 
-    #link {
-        left: 11rem;
-        bottom: 14rem;
-        padding: 4% 0 0 0;
-        width: 34%;
+    .first-section > .semi-left h1 {
+        font-size: 3.5rem;
+        word-break: keep-all;
     }
-
-    #eye {
-        bottom: 12rem;
-        padding: 4% 0 0 0;
-        width: 34%;
-    }
-
-    section{
-        height: 10vh;
-    }
-
-    .second-section h3 {
-        padding-bottom: 8%;
-        font-size: 19px;
-        font-weight: 600;
-    }
-
-    .third-section {
-        height: 10vh;
-    }
-}
-
-@media screen and (max-width: 395px) {
-    .left img {
-        width: 65%;
-    }
-
-    section{
-        height: 110vh;
-    }
-
-    .third-section {
-        height: 90vh;
-    }
-
-    .semi-left h1 {
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .semi-left .class {
-        font-size: 13px;
-        font-weight: 600;
-    }
-
-    button {
-        font-size: 8px;
-        font-weight: 400;
-    }
+       
+    .first-section > .semi-left > .class {
+        font-size: 1.7rem;
+        word-break: keep-all;
+        padding-bottom: 5%;
+    }    
     
-    #ending {
-        width: 24%;
-        left: 12rem;
-        bottom: 11rem;
-    }
-
-    #ending .picture {
-        width: 2.5rem;
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width: 326px) {
-    #ending {
-        width: 24%;
-        left: 10rem;
-        bottom: 10rem;
-    }
-
-    #ending .picture {
-        width: 2rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 968px) {
-    #tag p {
-        font-size: 20px;
-    } 
-}
-
-@media screen and (max-width: 807px) {
-    #tag p {
-        font-size: 15px;
-    } 
-}
-
-@media screen and (max-width: 537px) {
-    #foot {
-        flex-direction: column;
+    .first-section > .semi-left > button {
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }   
+    
+    
+    .first-section > .semi-left > .icons {
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         margin-top: 7%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon {
+        display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 5%;
+        width: 50%;
+    }
+    
+    .first-section > .semi-left > .icons > .icon img {
+        width: 30%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon p {
+        font-size: 1rem;
+        text-align: left;
+    }
+        
+    .first-section > .house {
+        width: 50%;
+        align-items: center; 
+        text-align: center;   
+    }
+    
+    .first-section > .house img {
+        width: 100%;
+        margin: auto;
+    }  
+    
+    section{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        height: auto;
+        padding: 0 4%;
+        width: 100%;
+    }   
+    
+    section > .second-section {
+        margin: 4% 0;
+        width: 50%;
+        padding: 0;
+    }    
+    
+    section > .second-section h3 {
+        word-break: keep-all;
+        padding-bottom: 8%;
+        font-size: 2.5rem;
+    }
+    
+    section > .second-section p {
+        word-break: keep-all;
+        font-size: 1.7rem;
+        padding-bottom: 9%;
+    }    
+    
+    section > .second-section .learn {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }   
+    
+    section > .house2 {
+        margin: 0;
+        width: 45%;
+        position: relative;
+    }   
+    
+    section > .house2 > #ire {
+        padding-top: 13%;
+        padding-left: 15%;
+        position: relative;
+        width: 100%;
+    }
+    
+    section > .house2 > #ire img {
+        width: 100%;
+    }
+    
+    section > .house2 > #eye {
+        position: relative;
+        bottom: 16rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    }    
+    
+    section > .house2 > #link {
+        position: absolute;
+        left: 20rem;
+        bottom: 5rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    }    
+    
+    .third-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 5%;
+        margin: 10% auto;
+    }
+    
+    .third-section > .third {
+        width: 50%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .third-section > .third > #bed-room {
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+    
+    .third-section > .third > #bed-room img {
+        width: 100%;
+    }
+    
+    .third-section > .third > .girl-frame {
+        position: relative;
+        z-index: 1;
+        bottom: 7rem;
+        right: 3rem;
+        padding: 2.2rem 1rem;
+        width: 67%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe {
+        margin-top: 5%;
+        margin-left: 10px;
+        padding-left: 0%;
     } 
     
-    #last-frame img {
-        padding-top: 1%;
+    .third-section > .third > .girl-frame > #joyframe img {
+        width: 26%;
     }
     
-    #tag p {
-        font-size: 12px;
+    .third-section > .third > .girl-frame > #joyframe p {
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe #logo {
+        font-size: 1.5rem;
+        margin-left: 30%;
+        margin-top: -30%;
+    }
+    
+    .third-section > .third >.girl-frame >  #social {
+        margin-left: 20%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-evenly;
+    }    
+    
+    .third-section > .third > #ending {
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        bottom: 7rem;
+        left: 24rem;
+        padding: 1.5rem;
+    }
+    
+    .third-section > .third > #ending .picture {
+        width: 100%;
+    }
+    
+    .third-section > .semi-end {
+        word-break: keep-all;
+        width: 50%;
+        /* height: 110vh; */
+        padding: 0;
+        margin-top: 3%;
+    }
+    
+    .third-section > .semi-end h2 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .third-section > .semi-end p {
+        font-weight: 500;
+        font-size: 1.5rem;
     }
 
-    #tag img {
-        width: 12%;
+    .third-section > .semi-end li {
+        margin-bottom: 30px;
+        margin-left: 5%;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .third-section > .semi-end > .last-button {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    footer {
+        width: 100%;
+        padding: 3% 4%;
+    }
+    
+    footer > #foot {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    footer > #foot #last-frame {
+        width: 25%;
+    }
+    
+    footer > #foot #last-frame img {
+        width: 100%;
+    }
+    
+    footer > #foot > #tag p {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: end;
+    }
+    
+    footer > #foot > #tag {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    footer > #foot > #tag > #internet {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8%;
+        width: 100%;
+    }
+    
+    footer > #foot > #tag > #internet img {
+        width: 7%;
     }
 }
 
+@media screen and (min-width: 1440px) and (min-width: 809px) {
+    section > .house2 > #link {
+        position: absolute;
+        left: 24rem;
+        bottom: 5rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    } 
+
+    .third-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 7%;
+        margin: 10% auto;
+    }
+
+    .third-section > .third > .girl-frame {
+        position: relative;
+        z-index: 1;
+        bottom: 7rem;
+        right: 5rem;
+        padding: 2.2rem 1rem;
+        width: 67%;
+    }
+
+    .third-section > .third > #ending {
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        bottom: 6rem;
+        left: 26rem;
+        padding: 1.5rem;
+    }
+
+    footer {
+        width: 100%;
+        padding: 3% 4%;
+    }
+}
+
+@media screen and (min-width: 1680px) and (min-width: 1050px) {
+    header > .nav2 {
+        display: none;
+    }
+
+    header > .iren > nav {
+        display: flex;
+        width: 40%;
+        text-align: center;
+        margin: 0;
+    }
+
+    header > .iren > nav a {
+        padding: 3%;
+        font-size: 2rem;
+    }
+
+    header > .iren > nav #blog {
+        text-align: right;
+        font-size: 1.9rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header > .iren > .left {
+        width: 20%;
+        padding: 0 0 0 4%;
+        margin: 0;
+    }
+
+    header > .iren > .left img {
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .first-section {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        padding: 0 4%;
+    }  
+    
+    .first-section > .semi-left {
+        text-align: left;
+        width: 50%;
+        margin: 6% 0;
+    }
+
+    .first-section > .semi-left h1 {
+        font-size: 4.5rem;
+        word-break: keep-all;
+    }
+       
+    .first-section > .semi-left > .class {
+        font-size: 2rem;
+        word-break: keep-all;
+        padding-bottom: 5%;
+    }    
+    
+    .first-section > .semi-left > button {
+        margin-top: 2%;
+        font-size: 1.7rem;
+    }   
+    
+    
+    .first-section > .semi-left > .icons {
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         margin-top: 7%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        width: 50%;
+    }
+    
+    .first-section > .semi-left > .icons > .icon img {
+        width: 40%;
+    }    
+    
+    .first-section > .semi-left > .icons > .icon p {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+        
+    .first-section > .house {
+        width: 50%;
+        align-items: center; 
+        text-align: center;   
+    }
+    
+    .first-section > .house img {
+        width: 100%;
+        margin: auto;
+    }  
+    
+    section{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        height: auto;
+        padding: 0 4%;
+        width: 100%;
+    }   
+    
+    section > .second-section {
+        margin: 4% 0;
+        width: 50%;
+        padding: 0;
+    }    
+    
+    section > .second-section h3 {
+        word-break: keep-all;
+        padding-bottom: 8%;
+        font-size: 3.5rem;
+    }
+    
+    section > .second-section p {
+        word-break: keep-all;
+        font-size: 2rem;
+        padding-bottom: 9%;
+    }    
+    
+    section > .second-section .learn {
+        margin-top: 0;
+        font-size: 1.7rem;
+    }   
+    
+    section > .house2 {
+        margin: 0;
+        width: 45%;
+        position: relative;
+    }   
+    
+    section > .house2 > #ire {
+        padding-top: 13%;
+        padding-left: 15%;
+        position: relative;
+        width: 100%;
+    }
+    
+    section > .house2 > #ire img {
+        width: 100%;
+    }
+    
+    section > .house2 > #eye {
+        position: relative;
+        bottom: 16rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    }    
+    
+    section > .house2 > #link {
+        position: absolute;
+        left: 28rem;
+        bottom: 5rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10% 0;
+        width: 30%;
+    }    
+    
+    .third-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 9%;
+        margin: 10% auto;
+    }
+    
+    .third-section > .third {
+        width: 50%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .third-section > .third > #bed-room {
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+    
+    .third-section > .third > #bed-room img {
+        width: 100%;
+    }
+    
+    .third-section > .third > .girl-frame {
+        position: relative;
+        z-index: 1;
+        bottom: 7rem;
+        right: 5rem;
+        padding: 2.2rem 1rem;
+        width: 67%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe {
+        margin-top: 5%;
+        margin-left: 10px;
+        padding-left: 0%;
+    } 
+    
+    .third-section > .third > .girl-frame > #joyframe img {
+        width: 26%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe p {
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+    }
+    
+    .third-section > .third > .girl-frame > #joyframe #logo {
+        font-size: 1.5rem;
+        margin-left: 30%;
+        margin-top: -30%;
+    }
+    
+    .third-section > .third >.girl-frame >  #social {
+        margin-left: 20%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-evenly;
+    }    
+    
+    .third-section > .third > #ending {
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        bottom: 6rem;
+        left: 28rem;
+        padding: 1.5rem;
+    }
+    
+    .third-section > .third > #ending .picture {
+        width: 100%;
+    }
+    
+    .third-section > .semi-end {
+        word-break: keep-all;
+        width: 50%;
+        /* height: 110vh; */
+        padding: 0;
+        margin-top: 3%;
+    }
+    
+    .third-section > .semi-end h2 {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    
+    .third-section > .semi-end p {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .third-section > .semi-end li {
+        margin-bottom: 30px;
+        margin-left: 5%;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .third-section > .semi-end > .last-button {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    footer {
+        width: 100%;
+        padding: 3% 4%;
+    }
+    
+    footer > #foot {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    footer > #foot #last-frame {
+        width: 20%;
+    }
+    
+    footer > #foot #last-frame img {
+        width: 100%;
+    }
+    
+    footer > #foot > #tag p {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: end;
+    }
+    
+    footer > #foot > #tag {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    footer > #foot > #tag > #internet {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8%;
+        width: 100%;
+    }
+    
+    footer > #foot > #tag > #internet img {
+        width: 9%;
+    }
+}
